@@ -1,0 +1,6 @@
+first=input("enter first number")
+second=input("enter second number")
+third=input("enter third number")
+fourth=input("entyerforth number")
+sum=int(first)+ int(second)+ int(third)+ int(fourth)
+print(sum)
