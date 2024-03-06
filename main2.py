@@ -6,18 +6,18 @@ window.title("Python GUI")
 window.geometry("700x500+100+50")
 window.config(bg='cyan')
 label = tk.Label(window,
-               text="name",
-               background='#12ddee',
-               height='1',
-               font=("Roman", 15, "bold"
-                     )
-               )
+                 text="name",
+                 background='#12ddee',
+                 height='1',
+                 font=("Roman", 15, "bold"
+                       )
+                 )
 label.grid(column=0,
-         ipadx=5,
-         row=0,
-         padx=5,
-         pady=5
-         )
+           ipadx=5,
+           row=0,
+           padx=5,
+           pady=5
+           )
 
 
 def clicked():
