@@ -5,14 +5,14 @@ window = tk.Tk()
 window.title("Python GUI")
 window.geometry("700x500+100+50")
 window.config(bg='cyan')
-lbl = tk.Label(window,
+label = tk.Label(window,
                text="name",
                background='#12ddee',
                height='1',
                font=("Roman", 15, "bold"
                      )
                )
-lbl.grid(column=0,
+label.grid(column=0,
          ipadx=5,
          row=0,
          padx=5,
@@ -21,7 +21,7 @@ lbl.grid(column=0,
 
 
 def clicked():
-    lbl.configure(text="SUBMITTED")
+    label.configure(text="SUBMITTED")
 
 
 btn = tk.Button(window,
