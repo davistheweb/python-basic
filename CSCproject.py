@@ -13,6 +13,7 @@ lbl = tk.Label(window,
                      )
                )
 lbl.grid(column=0,
+         ipadx=5,
          row=0,
          padx=5,
          pady=5
@@ -25,10 +26,15 @@ def clicked():
 
 btn = tk.Button(window,
                 text="Submit",
+                background="#12ddee",
+                padx=5,
+                pady=5,
                 command=clicked
                 )
 btn.grid(column=2,
-         row=0
+         row=0,
+         padx=10,
+         pady=1
          )
 
 txt = tk.Entry(window,
@@ -47,7 +53,7 @@ txt_disabled.grid(column=4,
                   row=0
                   )
 
-combo = ttk.Combobox(window)  
+combo = ttk.Combobox(window)
 combo["values"] = (1, 2, 3,)
 combo.current(1)  # Set selected item
 combo.grid(column=3,
@@ -55,7 +61,7 @@ combo.grid(column=3,
            )
 
 # Checkbox
-chk_state = tk.BooleanVar() 
+chk_state = tk.BooleanVar()
 chk_state.set(True)  # Set check state
 chk = tk.Checkbutton(window,
                      text="choose",
