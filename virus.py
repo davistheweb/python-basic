@@ -1,5 +1,7 @@
 import turtle
 
+turtle.title ("Virus")
+
 a = 0
 b = 0
 

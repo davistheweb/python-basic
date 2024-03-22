@@ -1,6 +1,6 @@
 def reverse_string(input_string):
     # Using slicing to reverse the string
-    reversed_string = input_string[:-1]
+    reversed_string = input_string[::-1]
     return reversed_string
 
 # Input string from user
