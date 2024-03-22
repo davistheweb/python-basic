@@ -7,7 +7,7 @@ b = 0
 
 turtle.bgcolor("black")
 turtle.speed(0)
-turtle.pencolor("red")
+turtle.pencolor("blue")
 turtle.penup()
 turtle.goto(0,200)
 turtle.pendown()
