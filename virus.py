@@ -7,7 +7,7 @@ b = 0
 
 turtle.bgcolor("black")
 turtle.speed(0)
-turtle.pencolor("blue")
+turtle.pencolor("pink")
 turtle.penup()
 turtle.goto(0,200)
 turtle.pendown()
@@ -15,9 +15,9 @@ turtle.pendown()
 while True:
     turtle.forward(a)
     turtle.right(b)
-    a += 3
+    a += 4
     b += 1
-    if b == 200:
+    if b == 600:
         break
 
 turtle.exitonclick()

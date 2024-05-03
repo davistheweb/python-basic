@@ -36,6 +36,6 @@ total_age = fatherAge()
 #Used the 'f (F-string (format string method))' to embed the user input from each variable 
 #into the expresssions using the enclosed curly braces
 
-print(f"Your father's name is: {name}")
-print(f"Your Father's date of birth is: {dob}")
-print (f"Your father's age is: {total_age}")
+print("Your father's name is: ",name)
+print("Your Father's date of birth is: ",dob)
+print ("Your father's age is: ",total_age)

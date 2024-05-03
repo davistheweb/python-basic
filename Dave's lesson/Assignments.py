@@ -14,4 +14,10 @@ else:
 #those who did not get the number will stuck in an endless loop forever, Unfortunately he dont know how to complete the code, lets help him to complete the task......................
 secret_no = 76
 
-
+while True:
+    check = int(input("Guess the secret number: "))
+    if check == secret_no:
+        print('Try again')
+     break
+     elif check == secret_no:
+        

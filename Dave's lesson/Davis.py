@@ -1,9 +1,9 @@
 #string fromat.
-"""""""""
+''''''''''
 std= 'joy'
 lecturer= 'mr drake'
 print("I am {} and my lecturer is {}".format(std,lecturer))
-"""""""""
+'''
 """""""""
 Age= 36
 Name= 'John'

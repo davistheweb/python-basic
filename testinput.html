@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            display: flex;
+            gap: 3rem;
+            margin-left: 10rem;
+            margin-top: 10rem;
+        }
+        textarea {
+            resize: none;
+        }
+        </style>
+    <form action="">
+        <p for=" counter"class="counter">(0 / 200)</p>
+        <textarea name="" id="" cols="30" rows="10" class="mytxt">
+
+        </textarea>
+    </form>
+
+<!--     <p class="typing-txt">0</p>
+    <p class="addnum">addnum</p>
+ -->
+
+<!--     <script>
+
+
+        let addNum = document.querySelector('.addnum')
+        
+        const typ = document.querySelector('.typing-txt')
+        let counter = 0
+        addNum.addEventListener('click', () => {
+            
+            counter ++
+            typ.textContent = counter
+            
+        })
+        
+
+    </script>
+ -->
+
+
+
+    <script>
+       const countText = (count, typing) => {
+            
+            const text_area = document.querySelector(typing)
+            let counter = 0;
+               
+                
+                const text_counter = document.querySelector(count)
+                
+            text_area.addEventListener('keydown', (event) => {
+                 
+                
+                if (event.key === 'Backspace') {
+                    --counter 
+                }
+
+                else {
+                    
+                counter++
+                }
+                text_counter.textContent = `(${counter} / 200)`
+                
+            
+            }
+
+            )
+            
+        }
+
+        countText('.counter', '.mytxt')
+    </script>
+
+</body>
+</html>

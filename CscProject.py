@@ -54,7 +54,7 @@ txt_disabled.grid(column=4,
                   )
 
 combo = ttk.Combobox(window)
-combo["values"] = (1, 2, 3,)
+combo["values"] = (1, 2, 3,4,5,6,7,8,9,10)
 combo.current(1)  # Set selected item
 combo.grid(column=3,
            row=0

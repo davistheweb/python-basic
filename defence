@@ -1,0 +1,4 @@
+import math
+num =10
+factorial =math .factorial (num)
+print("the factorial of",num,"is",factorial,)
